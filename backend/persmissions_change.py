@@ -31,7 +31,6 @@ def getGroupUsers(iamToken, groupId):
     r = requests.get(f"https://organization-manager.api.cloud.yandex.net/organization-manager/v1/groups/{groupId}:listMembers", headers=headers)
     return r.json()
 
-# print(getGroupUsers(getIAMToken(OAUTHTOKEN),"ajevfe3je1vgqeihfsfh"))
 
 # Получить всех пользователей всех групп (viewer, editor, admin). Он достает только почту и его subjectId Преобразуя его в словарь
 
