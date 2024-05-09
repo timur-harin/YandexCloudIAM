@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request
+from persmissions_change import changePermission
 
 app = Flask(__name__)
 
@@ -10,8 +11,8 @@ def index():
 def submit():
     email = request.form['inputField']
     role = request.form['option']
-    # change_permission(email, role)
-    return f'You entered: {email} and selected: {role}'
+    changePermission(email, role)
+    return render_template('success.html', email=email, role=role)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0',debug=True)
+    app.run(host='0.0.0.0',debug=True, port=5000)
