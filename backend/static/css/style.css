@@ -1,0 +1,84 @@
+label {
+    position: absolute;
+    text-align: left;
+    left: 11%;
+    width: 100%;
+}
+
+.form-container {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.email-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+    background-color: #dbdbdb;
+}
+
+.dropdown-menu {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    background-color: #dbdbdb;
+    border-radius: 5px;
+    width: 83%;
+}
+
+.submit-button {
+    background-color: #fcc1ff;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 0.25rem;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 78%;
+}
+
+.submit-button:hover {
+    background-color: rgba(252, 193, 255, 0.55);
+}
+
+.form-container input, .form-container select {
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.content {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 25px;
+  text-align: center;
+}
+
+.container {
+    color: #dbdbdb;
+    border: 3px solid rgba(252, 193, 255, 0.75);
+    background: rgba(28, 28, 28, 0.90);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40%;
+    transform: translate(-50%, -50%);
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+    background: #0e0e0e;
+}
+
+.galaxy-wrapper {
+    background-blend-mode: overlay;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}

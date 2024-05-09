@@ -1,23 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Permission Changer 3000</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <script src="../static/js/jquery-3.7.1.min.js"></script>
+    <script src="../static/js/index.js"></script>
 </head>
 <body>
-    <h1>Welome to Permission Changer 3000</h1>
-    <form action="/submit" method="post">
-        <label for="inputField">Eneter yout email::</label>
-        <input type="text" id="inputField" name="inputField" required>
-        
-        <p>Select an option:</p>
-        <input type="radio" id="option1" name="option" value="viewer" required>
-        <label for="option1">Viewer</label><br>
-        <input type="radio" id="option2" name="option" value="editor">
-        <label for="option2">Editor</label><br>
-        <input type="radio" id="option3" name="option" value="admin">
-        <label for="option3">Admin</label><br>
-        
-        <input type="submit" value="Submit">
-    </form>
+    <section class="galaxy-wrapper">
+        <div class="container">
+            <div class="content">
+                <h2>Welcome to Permission Changer 3000</h2>
+                <form action="/submit" method="post" class="form-container">
+                    <label for="inputField">Email</label><br>
+                    <input type="email" id="inputField" name="inputField" class="email-input" required><br>
+
+                    <label for="dropdown">Permission</label><br>
+                    <select id="dropdown" class="dropdown-menu" name="option">
+                        <option value="viewer">Viewer</option>
+                        <option value="editor">Editor</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                    <div style="margin-top: 15px; margin-bottom: 10px;">
+                        <input type="submit" value="Submit" class="submit-button">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <canvas id="galaxy" width="100%" height="100%"></canvas>
+    </section>
 </body>
 </html>
