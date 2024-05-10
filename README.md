@@ -21,3 +21,7 @@ Run the built container
 -e ADMIN_GROUP_ID='<adminGroup>' \
 -d -v /logs.tv:/app/logs --name tv-lab \
 fatm1nd/tv-image `
+
+## Video demonstration
+Short PoC demo of the service
+https://streamable.com/rif6ar
