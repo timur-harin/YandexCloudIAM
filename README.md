@@ -16,4 +16,5 @@ Run the built container
 -e VIEWER_GROUP_ID='<viewerGroup>' \
 -e EDITOR_GROUP_ID='<editorGroup>' \
 -e ADMIN_GROUP_ID='<adminGroup>' \
+-d -v /logs.tv:/app/logs --name tv-lab \
 fatm1nd/tv-image `

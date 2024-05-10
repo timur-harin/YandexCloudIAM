@@ -16,13 +16,13 @@ def submit():
     role = request.form['option']
     purpose = request.form['purposeField']
     changePermission(email, role)
-    with open("permissions_change.log", "a") as f:
-        f.write(f"{email} - {role} - {datetime.datetime.now()}\n")
+    with open("logs/permissions_change.log", "a") as f:
+        f.write(f"{datetime.datetime.now()}, {email}, {role}, {purpose}\n")
     return render_template('success.html', email=email, role=role)
 
 @app.route('/logs')
 def logsHandler():
-    with open("permissions_change.log", "r") as f:
+    with open("logs/permissions_change.log", "r") as f:
         logs = f.readlines()        
     return logs
             
