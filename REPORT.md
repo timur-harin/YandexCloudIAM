@@ -44,9 +44,9 @@ The development team comprises individuals with expertise in backend development
 --|-----------
 | Nikita Semeritskiy | Backend Developer and System Administrator |
 | Daniyar Cherekbashev | Frontend Developer |
-| Ilya Pecherskiy | |
-| Albert Avkhadeev | |
-| Timur Kharin | |
+| Ilya Pecherskiy | Cloud developer and manager |
+| Albert Avkhadeev | Backend Developer|
+| Timur Kharin | API manager and flow developer |
 
 Despite the distribution of roles in our team, everyone participated in brainstorms and offered ideas and solutions to problems
 
