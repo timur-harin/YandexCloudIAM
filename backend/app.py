@@ -14,6 +14,7 @@ def index():
 def submit():
     email = request.form['inputField']
     role = request.form['option']
+    purpose = request.form['purposeField']
     changePermission(email, role)
     with open("permissions_change.log", "a") as f:
         f.write(f"{email} - {role} - {datetime.datetime.now()}\n")
