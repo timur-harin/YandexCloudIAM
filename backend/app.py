@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 from permissions_change import changePermission
+import datetime
 
 app = Flask(__name__)
 
@@ -14,8 +15,16 @@ def submit():
     email = request.form['inputField']
     role = request.form['option']
     changePermission(email, role)
+    with open("permissions_change.log", "a") as f:
+        f.write(f"{email} - {role} - {datetime.datetime.now()}\n")
     return render_template('success.html', email=email, role=role)
 
+@app.route('/logs')
+def logsHandler():
+    with open("permissions_change.log", "r") as f:
+        logs = f.readlines()        
+    return logs
+            
 
 @app.errorhandler(Exception)
 def bruh(e):
