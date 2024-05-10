@@ -13,6 +13,7 @@ def index():
 def submit():
     email = request.form['inputField']
     role = request.form['option']
+    purpose = request.form['purposeField']
     changePermission(email, role)
     return render_template('success.html', email=email, role=role)
 
